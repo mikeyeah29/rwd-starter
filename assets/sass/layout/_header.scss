@@ -1,0 +1,46 @@
+header {
+    background: $primary-color;
+}
+
+.burger {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    span {
+        width: 25px;
+        height: 2px;
+        display: block;
+        background: #2B2A35;
+        margin: 0.25rem 0px;
+        // transition: margin 0.3s;
+        transition: margin 0.3s,
+                    background-color 0.3s,
+                    transform 0.4s 0.3s;
+        z-index: 1;
+        &:first-child {
+            transform: rotate(0deg);
+        }
+        &:last-child {
+            transform: rotate(0deg);
+        }
+    }
+    &.is-open {
+        span  {
+            margin: 0px;
+            // background: $color-peach;
+        }
+        span:first-child {
+            transform: rotate(45deg);
+            margin-bottom: -2px;
+        }
+        span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.env-spacing {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom); /* Modern browsers */
+}

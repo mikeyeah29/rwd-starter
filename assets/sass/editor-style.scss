@@ -1,0 +1,22 @@
+// Base styles
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/mixins';
+
+// Editor-specific styles for blocks
+.editor-styles-wrapper {
+
+    font-family: $font-display;
+    background: $primary-color;
+    padding: 0px 40px;
+
+    .wp-block-post-title {
+        margin-bottom: 60px;
+    }
+
+    @import 'base/typography';
+    @import 'components/buttons';
+    @import 'base/utils';
+
+    // @import 'blocks/example-block';
+}

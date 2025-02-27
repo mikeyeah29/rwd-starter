@@ -1,0 +1,23 @@
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    padding: 0px 2.5rem;
+}
+
+.container-xxl {
+    @media (min-width: 1800px) {
+        max-width: 1580px;
+    }
+}
+
+.container-fluid {
+    max-width: 1920px;
+}
+
+.figure {
+    margin-bottom: 0px !important;
+}

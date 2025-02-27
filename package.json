@@ -1,0 +1,32 @@
+{
+  "name": "starter-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run watch:css\" \"wp-scripts start\"",
+    "build": "npm run build:css && wp-scripts build",
+    "build:css": "sass assets/sass/style.scss assets/css/main.css --style=compressed && sass assets/sass/editor-style.scss assets/css/editor-style.css --style=compressed -q",
+    "watch:css": "sass --watch assets/sass/style.scss:assets/css/main.css assets/sass/editor-style.scss:assets/css/editor-style.css -q"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeyeah29/wp-starter-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeyeah29/wp-starter-theme/issues"
+  },
+  "homepage": "https://github.com/mikeyeah29/wp-starter-theme#readme",
+  "description": "",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.7.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.82.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

@@ -1,0 +1,30 @@
+/* Custom Styles
+=============================================*/
+
+// Base styles
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/global';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utils';
+
+@import 'vendor/wp-overrides';
+@import 'vendor/bootstrap-overrides';
+
+// Layout styles
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navigation';
+
+// Components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/pagination';
+
+// Blocks
+// @import 'blocks/example-block';
+
+// Page styles
+@import 'pages/home';

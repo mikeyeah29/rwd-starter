@@ -1,0 +1,54 @@
+/* Colours
+============================================*/
+
+// Color Names
+$color-peach: #F9EFEB;
+$color-peach-dark: #F3E1D8;
+$color-dark: #2B2A35;
+$color-red: #FE1F0F;
+$color-white: #FFF;
+$color-black: #000;
+
+// Color Uses
+$primary-color: $color-peach;
+$secondary-color: $color-dark;
+$accent-color: $color-red;
+$color-text: $color-dark;
+
+/* Fonts
+============================================*/
+
+$font-display: "Universal Sans";
+
+/* Layout / Spacing
+============================================*/
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 2000px;
+
+// Spacing
+$spacing-unit: 16px;
+
+$space-xs: 10px;
+$space-sm: 20px;
+$space-md: 30px;
+$space-lg: 40px;
+
+/* Font Sizes
+============================================*/
+
+// Desktop
+$font-size-small: 1.125rem; // 18px;
+$font-size-medium: 1.375rem; // 22px;
+$font-size-large: 2rem; // 32px;
+$font-size-xlarge: 2.25rem; // 36px;
+$font-size-xxlarge: 5rem; // 80px;
+// Mobile
+$font-size-small-mobile: 1rem; // 16px;
+$font-size-medium-mobile: 1.25rem; // 20px;
+$font-size-large-mobile: 1.75rem; // 28px;
+$font-size-xlarge-mobile: 1.875rem; // 30px;
+$font-size-xxlarge-mobile: 3.25rem; // 50px;

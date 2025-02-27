@@ -1,0 +1,23 @@
+html {
+    font-size: $spacing-unit;
+}
+
+body {
+    background: $primary-color !important;
+    font-family: $font-display;
+}
+
+img {
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.img-portrait {
+  aspect-ratio: 3 / 4; /* Optional: Enforce a consistent aspect ratio */
+  object-fit: cover;
+}
+
+.img-landscape {
+  aspect-ratio: 3 / 2; /* Optional: Enforce a consistent aspect ratio */
+  object-fit: cover;
+}

@@ -1,0 +1,37 @@
+# Ignore compiled CSS files, but keep production-ready ones
+!assets/css/block-style.css
+!assets/css/editor-style.css
+
+# Include SASS files (do not ignore assets/sass/)
+# Ensure source SASS files are included for development.
+
+# Ignore source maps
+assets/css/*.map
+assets/js/*.map
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore package-lock.json (optional if your team doesn't need it)
+package-lock.json
+
+# WordPress upload and cache folders (if accidentally added)
+uploads/
+cache/

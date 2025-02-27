@@ -1,0 +1,54 @@
+// Colours
+
+.txt-primary { color: $primary-color; }
+.txt-secondary { color: $secondary-color; }
+.txt-accent { color: $accent-color; }
+
+// WP Gutenburg Colours
+
+/* Custom Gutenberg colors */
+.has-peach-color { color: #F9EFEB; }
+.has-peach-background-color { background-color: #F9EFEB; }
+
+.has-peach-dark-color { color: $color-peach-dark; }
+.has-peach-dark-background-color { background-color: $color-peach-dark; }
+
+.has-dark-color { color: #2B2A35; }
+.has-dark-background-color { background-color: #2B2A35; }
+
+.has-red-color {
+    color: #FE1F0F;
+}
+.has-red-background-color {
+    background-color: #FE1F0F;
+}
+
+.has-white-color {
+    color: #FFF;
+}
+.has-white-background-color {
+    background-color: #FFF;
+}
+
+.has-black-color {
+    color: #000;
+}
+.has-black-background-color {
+    background-color: #000;
+}
+
+// Spacing
+.spacer-small { height: 1.25rem; } /* 20px */
+.spacer-medium { height: 3.75rem; } /* 30px */
+.spacer-large { height: 2.5rem; } /* 40px */
+.spacer-xlarge { height: 3.125rem; } /* 50px */
+.spacer-xxlarge { height: 4.688rem; } /* 75px */
+
+/* Example: Responsive Margins */
+@media (min-width: 768px) {
+    .spacer-small { height: 2.5rem; } /* 40px */
+    .spacer-medium { height: 3.75rem; } /* 60px */
+    .spacer-large { height: 5rem; } /* 80px */
+    .spacer-xlarge { height: 6.25rem; } /* 100px */
+    .spacer-xxlarge { height: 8.125rem; } /* 130px */
+}

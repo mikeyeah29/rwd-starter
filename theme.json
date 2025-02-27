@@ -1,0 +1,16 @@
+{
+    "settings": {
+        "spacing": {
+            "blockGap": "1.25rem"
+        }
+    },
+    "styles": {
+        "blocks": {
+            "core/columns": {
+                "spacing": {
+                    "blockGap": "1.25rem"
+                }
+            }
+        }
+    }
+}

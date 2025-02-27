@@ -1,0 +1,10 @@
+// Declare Universal Sans font
+@font-face {
+    font-family: "Universal Sans"; /* Name of the font */
+    src: url("../fonts/universal-sans/universal-sans.woff2") format("woff2"), /* Modern format */
+         url("../fonts/universal-sans/universal-sans.woff") format("woff"),   /* Fallback format */
+         url("../fonts/universal-sans/universal-sans.ttf") format("truetype"); /* Legacy format */
+    font-weight: normal; /* Adjust based on font weight */
+    font-style: normal; /* Adjust based on font style */
+    font-display: swap; /* Improves loading performance */
+}

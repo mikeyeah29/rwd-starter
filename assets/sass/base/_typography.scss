@@ -1,0 +1,77 @@
+p {
+    font-size: $font-size-medium; // 22px
+    line-height: 1.45em;
+    letter-spacing: -0.05em;
+    color: $color-dark;
+    @media (max-width: 768px) {
+        font-size: $font-size-medium-mobile;
+    }
+}
+
+h1,
+.hdln-1 {
+    font-size: $font-size-xxlarge; // 80px
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin: 0px;
+    color: $color-dark;
+    @media (max-width: 768px) {
+        font-size: $font-size-xxlarge-mobile;
+    }
+}
+
+h2,
+.hdln-2 {
+    font-size: $font-size-xlarge; // 36px
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: $color-dark;
+    @media (max-width: 768px) {
+        font-size: $font-size-xlarge-mobile;
+    }
+}
+
+h3,
+.hdln-3 {
+    font-size: $font-size-large; // 32px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: $color-dark;
+    @media (max-width: 768px) {
+        font-size: $font-size-large-mobile;
+    }
+}
+
+h4,
+.hdln-4 {
+    line-height: 1;
+    letter-spacing: -0.05em;
+    font-size: $font-size-medium; // 22px
+    color: $color-dark;
+    @media (max-width: 768px) {
+        font-size: $font-size-medium-mobile;
+    }
+}
+
+// Font sizes map
+$font-sizes: (
+    small: ($font-size-small, $font-size-small-mobile),
+    medium: ($font-size-medium, $font-size-medium-mobile),
+    large: ($font-size-large, $font-size-large-mobile),
+    xlarge: ($font-size-xlarge, $font-size-xlarge-mobile),
+    xxlarge: ($font-size-xxlarge, $font-size-xxlarge-mobile)
+);
+
+// Generate text size classes with scaling for mobile
+@each $name, $sizes in $font-sizes {
+    $desktop-size: nth($sizes, 1);
+    $mobile-size: nth($sizes, 2);
+
+    .txt-#{$name} {
+        font-size: $desktop-size;
+
+        @media (max-width: 768px) {
+            font-size: $mobile-size;
+        }
+    }
+}
