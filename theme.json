@@ -1,10 +1,67 @@
 {
     "settings": {
         "spacing": {
-            "blockGap": "1.25rem"
+            "spacingScale": {
+                "steps": 0
+            },
+            "blockGap": "1.25rem",
+            "padding": true,
+            "customPadding": false,
+            "customSpacingSize": false,
+            "spacingSizes": [
+                {
+                    "slug": "small",
+                    "size": "2.5rem",
+                    "name": "Small"
+                },
+                {
+                    "slug": "medium",
+                    "size": "3.75rem",
+                    "name": "Medium"
+                },
+                {
+                    "slug": "large",
+                    "size": "5rem",
+                    "name": "Large"
+                },
+                {
+                    "slug": "xlarge",
+                    "size": "6.25rem",
+                    "name": "X-Large"
+                },
+                {
+                    "slug": "xxlarge",
+                    "size": "8.125rem",
+                    "name": "XX-Large"
+                }
+            ]
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "sage",
+                    "color": "#A7C4A0",
+                    "name": "Sage"
+                },
+                {
+                    "slug": "blue",
+                    "color": "#2b5b6e",
+                    "name": "Blue"
+                },
+                {
+                    "slug": "beige",
+                    "color": "#F5E9DA",
+                    "name": "Beige"
+                }
+            ],
+            "custom": false
         }
     },
     "styles": {
+        "color": {
+            "background": "#FDF4EF",
+            "text": "#010101"
+        },
         "blocks": {
             "core/columns": {
                 "spacing": {

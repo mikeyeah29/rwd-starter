@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'THEME_NAMESPACE' ) ) {
+	define( 'THEME_NAMESPACE', 'rwd-starter' );
+}
+
 // use RWDTheme\Blocks\Example_Block;
 
 /* Theme Setup
@@ -33,11 +37,10 @@ add_action('init', function() {
 
 /* Blocks
 =============================================*/
-// require_once get_stylesheet_directory() . '/inc/blocks/class-example-block.php';
 
-add_action('init', function() {
-// new Example_Block();
-});
+foreach (glob(get_template_directory() . '/inc/blocks/*.php') as $file) {
+    require_once $file;
+}
 
 add_action('wp_footer', function() {
     if (is_user_logged_in() && current_user_can('manage_options')) { // Restrict to logged-in admins
